@@ -1,0 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a4a4a;
+  background-color: #ffffff;
+  font-weight: 400;
+  line-height: 1.4;
+}
+/*# sourceMappingURL=home.css.map */
