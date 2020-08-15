@@ -29,14 +29,14 @@
   </head>
   <body>
     <header class="mynavbar">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-sm justify-content-between px-3 py-0">
+        <a class="navbar-brand mr-0" href="#">
           <img src="./img/web-logo.png" alt="logo" />
         </a>
         <div class="center">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Lịch chiếu</a>
+              <a class="nav-link" href="#">Lịch Chiếu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Cụm rạp</a>
@@ -50,30 +50,72 @@
           </ul>
         </div>
 
-        <div class="right">
+        <div class="right d-flex">
           <a class="nav-link" href="#">
             <img src="./img/avatar.png" alt="avatar" />
-            <span>Đăng nhập</span>
+            <span>Đăng Nhập</span>
           </a>
 
-          <label class="location">
-            <div class="location__icon">
-              <i class="fa fa-map-marker-alt"></i>
-            </div>
-            <select class="location__select">
-              <option>Hồ Chí Minh</option>
-              <option>Hà Nội</option>
-              <option>Đà Nẵng</option>
-              <option>Hải Phòng</option>
-              <option>Biên Hoà</option>
-              <option>Nha Trang</option>
-              <option>Bình Dương</option>
-              <option>Phan Thiết</option>
-              <option>Hạ Long</option>
-              <option>Cần Thơ</option>
-              <option>Vũng Tàu</option>
-            </select>
-          </label>
+          <div class="location__icon">
+            <img src="./img/location-header.png" alt="location" />
+          </div>
+
+          <select class="select select-scroll">
+            <option>Hồ Chí Minh</option>
+            <option>Hà Nội</option>
+            <option>Đà Nẵng</option>
+            <option>Hải Phòng</option>
+            <option>Biên Hoà</option>
+            <option>Nha Trang</option>
+            <option>Bình Dương</option>
+            <option>Phan Thiết</option>
+            <option>Hạ Long</option>
+            <option>Cần Thơ</option>
+            <option>Vũng Tàu</option>
+            <option>Quy Nhơn</option>
+            <option>Huế</option>
+            <option>Long Xuyên</option>
+            <option>Thái Nguyên</option>
+            <option>Buôn Ma Thuột</option>
+            <option>Bắc Giang</option>
+            <option>Bến Tre</option>
+            <option>Việt Trì</option>
+            <option>Ninh Bình</option>
+            <option>Thái Bình</option>
+            <option>Vinh</option>
+            <option>Bảo Lộc</option>
+            <option>Đà Lạt</option>
+            <option>Trà Vinh</option>
+            <option>Yên Bái</option>
+            <option>Kiên Giang</option>
+            <option>Vĩnh Long</option>
+            <option>Cà Mau</option>
+            <option>Hậu Giang</option>
+            <option>Tây Ninh</option>
+            <option>Tuyên Quang</option>
+            <option>Thanh Hóa</option>
+            <option>Nam Định</option>
+            <option>Hải Dương</option>
+            <option>Gia Lai</option>
+            <option>Hà Tĩnh</option>
+            <option>Phú Yên</option>
+            <option>Bạc Liêu</option>
+            <option>Long An</option>
+            <option>Đồng Hới</option>
+            <option>Hà Nam</option>
+            <option>Bắc Ninh</option>
+            <option>Quảng Trị</option>
+            <option>Kon Tum</option>
+            <option>Sóc Trăng</option>
+            <option>Sơn La</option>
+            <option>Lạng Sơn</option>
+            <option>Quảng Ngãi</option>
+            <option>Mỹ Tho</option>
+            <option>Đồng Tháp</option>
+            <option>Hưng Yên</option>
+          </select>
+
+          <label class="location d-flex align-items-center mb-0"> </label>
         </div>
         <button
           class="navbar-toggler d-lg-none"
@@ -107,5 +149,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/select.js"></script>
   </body>
 </html>
