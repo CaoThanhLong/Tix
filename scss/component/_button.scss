@@ -1,0 +1,20 @@
+.close-collapse {
+  @include button(
+    $subtitle2,
+    $fwRegular,
+    $textWhite,
+    $secondary,
+    $secondary,
+    $textWhite,
+    $secondary,
+    $secondary,
+    none,
+    spacing(1) spacing(1),
+    spacing(0.5) spacing(0.5)
+  );
+
+  width: 35px;
+  height: 35px;
+  line-height: 25px;
+  border-radius: 50%;
+}

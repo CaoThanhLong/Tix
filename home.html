@@ -29,7 +29,9 @@
   </head>
   <body>
     <header class="mynavbar">
-      <nav class="navbar navbar-expand-sm justify-content-between px-3 py-0">
+      <nav
+        class="navbar navbar-light navbar-expand-sm justify-content-between px-3 py-0"
+      >
         <a class="navbar-brand mr-0" href="#">
           <img src="./img/web-logo.png" alt="logo" />
         </a>
@@ -50,7 +52,7 @@
           </ul>
         </div>
 
-        <div class="right d-flex">
+        <div class="right">
           <a class="nav-link" href="#">
             <img src="./img/avatar.png" alt="avatar" />
             <span>Đăng Nhập</span>
@@ -114,21 +116,36 @@
             <option>Đồng Tháp</option>
             <option>Hưng Yên</option>
           </select>
-
-          <label class="location d-flex align-items-center mb-0"> </label>
         </div>
+
         <button
-          class="navbar-toggler d-lg-none"
+          id="toggler"
+          class="navbar-toggler mytoggler"
           type="button"
           data-toggle="collapse"
           data-target="#collapsibleNavId"
           aria-controls="collapsibleNavId"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        ></button>
-        <!-- <div class="collapse navbar-collapse" id="collapsibleNavId">
-          
-        </div> -->
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse mycollapse navbar-collapse" id="collapsibleNavId">
+          <div class="d-flex align-items-start">
+            <button class="btn close-collapse" id="close">X</button>
+            <div class="collapse-menu">
+              <a class="nav-link" href="#">
+                <img src="./img/avatar.png" alt="avatar" />
+                <span>Đăng Nhập</span>
+              </a>
+              <a href="#">Lịch Chiếu</a>
+              <a href="#">Cụm rạp</a>
+              <a href="#">Tin tức</a>
+              <a href="#">Ứng dụng</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -150,5 +167,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/select.js"></script>
+    <script src="./js/closecollapse.js"></script>
   </body>
 </html>
