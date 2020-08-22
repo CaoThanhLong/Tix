@@ -1,40 +1,29 @@
 .s-hidden {
   visibility: hidden;
-  padding-right: 10px;
 }
 .select {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  padding-left: spacing(2.2);
-  @include text($body2, $textGrey, $fwRegular);
 }
 .styledSelect {
   position: absolute;
-  top: 6px;
-  right: 0;
-  bottom: 0;
-  left: 33px;
-  padding: 0px;
-  font-weight: bold;
-}
-.styledSelect:after {
-  content: "";
-  border: 5px solid transparent;
-  border-color: black transparent transparent transparent;
-  position: absolute;
-  top: 6px;
-  right: 20px;
+
+  &:after {
+    content: "";
+    border: 5px solid transparent;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+  }
 }
 
 .options {
   display: none;
   position: absolute;
-  top: 150%;
   right: 0;
   left: 0;
   z-index: 999;
-  min-width: 150px;
+  // min-width: 150px;
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
@@ -44,12 +33,11 @@
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  max-height: 300px;
   overflow-y: scroll;
 }
 .options li {
   padding: 3px 20px;
-  @include text($subtitle2, $textBlack, $fwRegular);
+  @include text($subtitle1, $textBlack, $fwRegular);
 }
 .options li:hover {
   background-color: #39f;

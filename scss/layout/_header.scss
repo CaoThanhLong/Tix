@@ -50,9 +50,32 @@
     .location__icon {
       position: absolute;
       top: 19px;
-      right: 157px;
+      right: 140px;
       pointer-events: none;
       z-index: 1;
+    }
+
+    .select {
+      padding-left: spacing(0.8);
+      padding-right: spacing(1);
+      @include text($body2, $textGrey, $fwRegular);
+    }
+
+    .styledSelect {
+      top: 6px;
+      right: 0;
+      bottom: 0;
+      left: 33px;
+
+      &:after {
+        top: 6px;
+        right: 6px;
+      }
+    }
+
+    .options {
+      top: 150%;
+      max-height: 300px;
     }
   }
 
@@ -75,7 +98,7 @@
 
       .nav-link {
         @include text($subtitle1, $textBlack, $fwRegular);
-        border-right: solid 1px $textLightGrey;
+        border-right: solid 1px $lightGrey;
         padding: spacing(0.8) spacing(1.6);
         img {
           width: 30px;
