@@ -55,4 +55,8 @@
       width: 17%;
     }
   }
+
+  @include responsive-for("large") {
+    display: none;
+  }
 }
