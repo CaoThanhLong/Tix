@@ -216,113 +216,102 @@
     </section>
 
     <section class="buy-ticket">
-      <div class="container d-flex">
-        <select class="select select-scroll">
-          <option>Điệp Viên Siêu Lầy - My Spy - (13)</option>
-          <option>Cá Sấu Tử Thần - Black Water: Abyss - (C18)</option>
-          <option
+      <div
+        class="mycontainer buy-ticket__contain d-flex justify-content-between align-items-center"
+      >
+        <select class="select" id="movie-select">
+          <option selected>Phim</option>
+          <option value="1">Điệp Viên Siêu Lầy - My Spy - (13)</option>
+          <option value="2">Cá Sấu Tử Thần - Black Water: Abyss - (C18)</option>
+          <option value="3"
             >Nội Chiến Siêu Anh Hùng - Captain America: Civil War (NC16)</option
           >
-          <option>Kẻ Ẩn Nấp - You're Not Alone - (C16)</option>
-          <option>Mãi Bên Em - Endless - (C13)</option>
-          <option>Big Hero 6</option>
-          <option>Dinh Thự Oan Khuất - Ghost Of War - (C18)</option>
-          <option>Hồn Ma Văn Sĩ - Ghost Writer - (C18)</option>
-          <option>Kẻ Cuồng Sát - Unhinged - (C18)</option>
-          <option>Cậu Bé Người Gỗ Pinocchio - Pinocchio - (P)</option>
-          <option>Chuyến Du Lịch Chết Chóc - Outback - (C16)</option>
-          <option>Bán Đảo - Peninsula - (C18)</option>
-          <option>Tàn Tích Quỷ Ám - Relic - (C18)</option>
-          <option>Yêu Nhau Mùa Ế - Low Season - (C16)</option>
-          <option>Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! - (P)</option>
-          <option>Ngôi Đền Kì Quái - Pee Nak 2 - (C16)</option>
+          <option value="4">Kẻ Ẩn Nấp - You're Not Alone - (C16)</option>
+          <option value="5">Mãi Bên Em - Endless - (C13)</option>
+          <option value="6">Big Hero 6</option>
+          <option value="7">Dinh Thự Oan Khuất - Ghost Of War - (C18)</option>
+          <option value="8">Hồn Ma Văn Sĩ - Ghost Writer - (C18)</option>
+          <option value="9">Kẻ Cuồng Sát - Unhinged - (C18)</option>
+          <option value="10"
+            >Cậu Bé Người Gỗ Pinocchio - Pinocchio - (P)</option
+          >
+          <option value="11">Chuyến Du Lịch Chết Chóc - Outback - (C16)</option>
+          <option value="12">Bán Đảo - Peninsula - (C18)</option>
+          <option value="13">Tàn Tích Quỷ Ám - Relic - (C18)</option>
+          <option value="14">Yêu Nhau Mùa Ế - Low Season - (C16)</option>
+          <option value="15"
+            >Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! - (P)</option
+          >
+          <option value="16">Ngôi Đền Kì Quái - Pee Nak 2 - (C16)</option>
         </select>
 
-        <select class="select select-scroll">
-          <option>CGV Aeon Bình Tân</option>
-          <option>CGV Aeon Tân Phú</option>
-          <option>NCGV Crescent Mall</option>
-          <option>CGV Giga Mall Thủ Đức</option>
-          <option>CGV Hoàng Văn Thụ</option>
-          <option>CGV Hùng Vương Plaza</option>
-          <option>CGV IMC Trần Quang Khải</option>
-          <option>CGV Liberty Citypoint</option>
-          <option>CGV Lý Chính Thắng</option>
-          <option>CGV Pandora City</option>
-          <option>CGV Pearl Plaza</option>
-          <option>CGV Saigonres Nguyễn Xí</option>
-          <option>CGV Satra Củ Chi</option>
-          <option>CGV Sư Vạn Hạnh</option>
-          <option>CGV Thảo Điền Pearl</option>
-          <option>CGV Trường Sơn (CGV CT Plaza)</option>
-          <option>CGV Vincom Center Landmark 81</option>
-          <option>CGV Vincom Gò Vấp</option>
-          <option>CGV Vincom Thủ Đức</option>
-          <option>CGV Vincom Đồng Khởi</option>
-          <option>CGV Vivo City</option>
-          <option>CineStar Hai Bà Trưng</option>
-          <option>CineStar Quốc Thanh</option>
-          <option>DCINE Bến Thành</option>
-          <option>DDC - Đống Đa</option>
-          <option>Galaxy - Huỳnh Tấn Phát</option>
-          <option>Galaxy - Kinh Dương Vương</option>
-          <option>Galaxy - Linh Trung</option>
-          <option>Galaxy - Nguyễn Du</option>
-          <option>Galaxy - Nguyễn Văn Quá</option>
-          <option>Galaxy - Phạm Văn Chí</option>
-          <option>Galaxy - Quang Trung</option>
-          <option>Galaxy - Tân Bình</option>
-          <option>Lotte Cinema Cantavil</option>
-          <option>Lotte Cinema Cộng Hòa</option>
-          <option>Lotte Cinema Gò Vấp</option>
-          <option>Lotte Cinema Nam Sài Gòn</option>
-          <option>Lotte Cinema Phú Thọ</option>
-          <option>Lotte Cinema Thủ Đức</option>
-          <option>Mega GS Cao Thắng</option>
+        <select class="select" id="theater-select">
+          <option selected>Rạp</option>
+          <option value="1">CGV Aeon Bình Tân</option>
+          <option value="2">CGV Aeon Tân Phú</option>
+          <option value="3">NCGV Crescent Mall</option>
+          <option value="4">CGV Giga Mall Thủ Đức</option>
+          <option value="5">CGV Hoàng Văn Thụ</option>
+          <option value="6">CGV Hùng Vương Plaza</option>
+          <option value="7">CGV IMC Trần Quang Khải</option>
+          <option value="8">CGV Liberty Citypoint</option>
+          <option value="9">CGV Lý Chính Thắng</option>
+          <option value="10">CGV Pandora City</option>
+          <option value="11">CGV Pearl Plaza</option>
+          <option value="12">CGV Saigonres Nguyễn Xí</option>
+          <option value="13">CGV Satra Củ Chi</option>
+          <option value="14">CGV Sư Vạn Hạnh</option>
+          <option value="15">CGV Thảo Điền Pearl</option>
+          <option value="16">CGV Trường Sơn (CGV CT Plaza)</option>
+          <option value="17">CGV Vincom Center Landmark 81</option>
+          <option value="18">CGV Vincom Gò Vấp</option>
+          <option value="19">CGV Vincom Thủ Đức</option>
+          <option value="20">CGV Vincom Đồng Khởi</option>
+          <option value="21">CGV Vivo City</option>
+          <option value="22">CineStar Hai Bà Trưng</option>
+          <option value="23">CineStar Quốc Thanh</option>
+          <option value="24">DCINE Bến Thành</option>
+          <option value="25">DDC - Đống Đa</option>
+          <option value="26">Galaxy - Huỳnh Tấn Phát</option>
+          <option value="27">Galaxy - Kinh Dương Vương</option>
+          <option value="28">Galaxy - Linh Trung</option>
+          <option value="29">Galaxy - Nguyễn Du</option>
+          <option value="30">Galaxy - Nguyễn Văn Quá</option>
+          <option value="31">Galaxy - Phạm Văn Chí</option>
+          <option value="32">Galaxy - Quang Trung</option>
+          <option value="33">Galaxy - Tân Bình</option>
+          <option value="34">Lotte Cinema Cantavil</option>
+          <option value="35">Lotte Cinema Cộng Hòa</option>
+          <option value="36">Lotte Cinema Gò Vấp</option>
+          <option value="37">Lotte Cinema Nam Sài Gòn</option>
+          <option value="38">Lotte Cinema Phú Thọ</option>
+          <option value="39">Lotte Cinema Thủ Đức</option>
+          <option value="40">Mega GS Cao Thắng</option>
         </select>
 
-        <select class="select select-scroll">
-          <option>
-            <p>Hôm nay</p>
-            <p>2020-08-18</p>
-          </option>
-          <option>
-            <p>Ngày mai</p>
-            <p>2020-08-19</p>
-          </option>
-          <option>
-            <p>Thứ năm</p>
-            <p>2020-08-20</p>
-          </option>
-          <option>
-            <p>Thứ sáu</p>
-            <p>2020-08-21</p>
-          </option>
-          <option>
-            <p>Thứ bảy</p>
-            <p>2020-08-22</p>
-          </option>
-          <option>
-            <p>Chủ nhật</p>
-            <p>2020-08-23</p>
-          </option>
-          <option>
-            <p>Thứ hai</p>
-            <p>2020-08-24</p>
-          </option>
+        <select class="select" id="date-select">
+          <option selected>Ngày xem</option>
+          <option value="1">Hôm nay 2020-08-18</option>
+          <option value="2">Ngày mai 2020-08-19</option>
+          <option value="3">Thứ năm 2020-08-20</option>
+          <option value="4">Thứ sáu 2020-08-21</option>
+          <option value="5">Thứ bảy 2020-08-22</option>
+          <option value="6">Chủ nhật 2020-08-23</option>
+          <option value="7">Thứ hai 2020-08-24</option>
         </select>
 
-        <select class="select select-scroll">
-          <option>14:00</option>
-          <option>14:40</option>
-          <option>16:00</option>
-          <option>16:45</option>
-          <option>18:00</option>
-          <option>18:30</option>
+        <select class="select" id="showtime-select">
+          <option selected>Suất chiếu</option>
+          <option value="1">14:00</option>
+          <option value="2">14:40</option>
+          <option value="3">16:00</option>
+          <option value="4">16:45</option>
+          <option value="5">18:00</option>
+          <option value="6">18:30</option>
         </select>
+
+        <button class="btn ticket-buy">MUA VÉ NGAY</button>
       </div>
-
-      <button class="btn">MUA VÉ NGAY</button>
     </section>
 
     <!-- Optional JavaScript -->

@@ -1,0 +1,58 @@
+.buy-ticket {
+  position: relative;
+  .buy-ticket__contain {
+    display: block;
+    max-width: 940px;
+    margin: auto;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+
+    .select {
+      width: 17%;
+      padding-left: spacing(0);
+      border-right: solid 1px $lightGrey;
+      @include text($subtitle1, $textBlack, $fwLight);
+
+      .options {
+        top: 30px;
+        max-height: 300px;
+        max-width: 620px;
+      }
+
+      .styledSelect {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:after {
+          top: 5px;
+          right: 10px;
+        }
+      }
+    }
+
+    .select:nth-child(1) {
+      width: 32%;
+    }
+
+    button {
+      width: 17%;
+    }
+  }
+}

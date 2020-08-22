@@ -18,3 +18,19 @@
   line-height: 25px;
   border-radius: 50%;
 }
+
+.ticket-buy {
+  @include button(
+    $subtitle1,
+    $fwRegular,
+    $textWhite,
+    $darkGrey,
+    $darkGrey,
+    $textWhite,
+    $darkGrey,
+    $darkGrey,
+    none,
+    spacing(0) spacing(1),
+    spacing(1) spacing(2.5)
+  );
+}
