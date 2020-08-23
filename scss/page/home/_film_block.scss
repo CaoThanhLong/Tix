@@ -1,0 +1,173 @@
+.film-block {
+  padding-top: 100px;
+  position: relative;
+
+  .nav-tabs {
+    border: none;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: spacing(4.5);
+
+    .nav-link {
+      border: none;
+      @include text($h4 - 4px, $textBlack, $fwRegular);
+      transition: all 0.2s;
+    }
+
+    .nav-link.active {
+      @include text($h4, $textSecondary, $fwRegular);
+    }
+
+    .nav-link:hover {
+      font-size: $h4;
+      cursor: pointer;
+    }
+  }
+
+  .film-container {
+    .film-item {
+      position: relative;
+      padding: 0 spacing(1);
+      margin-bottom: spacing(3);
+
+      .trailer {
+        position: relative;
+        img {
+          border-radius: 5px;
+          width: 100%;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to top, $black, transparent 80%);
+          border-radius: 5px;
+          opacity: 0;
+          z-index: 2;
+        }
+        .trailer-play {
+          position: absolute;
+          border: solid 1.5px $primary;
+          border-radius: 50%;
+          top: 41%;
+          left: 39%;
+          width: 55px;
+          height: 55px;
+          @include text($body2, $primary, $fwBold);
+          line-height: 55px;
+          text-align: center;
+          opacity: 0;
+          z-index: 2;
+
+          &:hover {
+            opacity: 0.6 !important;
+          }
+        }
+      }
+      .film-title {
+        height: 42px;
+        max-height: 42px;
+        @include text($h6, $textBlack, $fwBold);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin: spacing(1) 0;
+
+        span {
+          @include text($subtitle1, $textWhite, $fwBold);
+          font-size: 14px;
+          background-color: $secondary;
+          border-radius: 4px;
+          padding: 0 spacing(0.5);
+          min-width: 33px;
+          text-align: center;
+          display: inline-block;
+          margin-right: spacing(0.8);
+        }
+      }
+
+      .film-time {
+        @include text($body2, $textPrimary, $fwRegular);
+        margin-bottom: spacing(1.5);
+        margin-top: spacing(0.8);
+      }
+
+      .film-rating {
+        position: absolute;
+        background-color: rgba(12, 27, 54, 0.8);
+        border: 1px solid #1f2e46;
+        border-radius: 4px;
+        padding: 2px;
+        position: absolute;
+        top: 12px;
+        right: 25px;
+        width: 54px;
+        text-align: center;
+        line-height: 1.1;
+
+        .film-point {
+          @include text($h6, $textWhite, $fwBold);
+          margin-bottom: spacing(0.7);
+          text-align: center;
+          line-height: 1.1;
+        }
+
+        .rating__stars {
+          @include text(6px, $textSecondary, $fwRegular);
+          margin-bottom: spacing(0.5);
+        }
+      }
+
+      .film-date {
+        position: absolute;
+        @include text($h6, $textWhite, $fwBold);
+        background-color: rgba(12, 27, 54, 0.8);
+        border: 1px solid #1f2e46;
+        border-radius: 4px;
+        padding: 5px;
+        position: absolute;
+        top: 265px;
+        right: 20px;
+        width: 54px;
+        text-align: center;
+        line-height: 1.1;
+        z-index: 3;
+      }
+
+      .ticket-buy {
+        display: none;
+      }
+
+      .blockbluster {
+        position: absolute;
+        top: -25px;
+        left: -7px;
+        width: 60%;
+        z-index: 3;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .trailer {
+          .overlay,
+          .trailer-play {
+            opacity: 1;
+          }
+        }
+
+        .film-title,
+        .film-time {
+          display: none;
+        }
+        .ticket-buy {
+          display: block;
+        }
+      }
+    }
+  }
+}

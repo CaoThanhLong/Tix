@@ -19,7 +19,7 @@
   border-radius: 50%;
 }
 
-.ticket-buy {
+.ticket-buy-now {
   @include button(
     $subtitle1,
     $fwRegular,
@@ -33,4 +33,25 @@
     spacing(0) spacing(1),
     spacing(1) spacing(2.5)
   );
+}
+
+.ticket-buy {
+  @include button(
+    $h5,
+    $fwBold,
+    $textWhite,
+    $secondary,
+    $secondary,
+    $textWhite,
+    $secondary,
+    $secondary,
+    none,
+    spacing(1) spacing(0),
+    spacing(1) spacing(2.5)
+  );
+
+  // position: absolute;
+  // bottom: 5%;
+  // left: 0;
+  width: 100%;
 }
