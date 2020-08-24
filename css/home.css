@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #4a4a4a;
@@ -440,8 +444,8 @@ body {
   border-radius: 4px;
   padding: 2px;
   position: absolute;
-  top: 12px;
-  right: 25px;
+  top: 4%;
+  right: 10%;
   width: 54px;
   text-align: center;
   line-height: 1.1;
@@ -473,8 +477,8 @@ body {
   border-radius: 4px;
   padding: 5px;
   position: absolute;
-  top: 265px;
-  right: 20px;
+  top: 66%;
+  right: 10%;
   width: 54px;
   text-align: center;
   line-height: 1.1;
@@ -509,6 +513,60 @@ body {
 
 .film-block .film-container .film-item:hover .ticket-buy {
   display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .film-block {
+    padding-top: 50px;
+  }
+  .film-block .film-container .film-item .film-rating {
+    right: 13%;
+  }
+  .film-block .film-container .film-item .film-date {
+    top: 58%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .film-block .film-container .film-item .trailer .overlay,
+  .film-block .film-container .film-item .trailer .trailer-play {
+    display: none;
+  }
+  .film-block .film-container .film-item .film-title,
+  .film-block .film-container .film-item .film-time {
+    display: none;
+  }
+  .film-block .film-container .film-item .film-rating {
+    top: 7%;
+    right: 16%;
+  }
+  .film-block .film-container .film-item .film-date {
+    top: 76%;
+    right: 14%;
+  }
+  .film-block .film-container .film-item .ticket-buy {
+    display: none;
+  }
+  .film-block .film-container .film-item:hover .ticket-buy {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .film-block .nav-tabs .nav-link {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+  }
+  .film-block .nav-tabs .nav-link.active,
+  .film-block .nav-tabs .nav-link:hover {
+    font-size: 18px;
+  }
+  .film-block .film-container .film-item .film-date {
+    top: 70%;
+    right: 20%;
+  }
 }
 
 .mycontainer {
@@ -678,5 +736,12 @@ body {
 
 .owl-carousel .owl-dot {
   display: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    display: none;
+  }
 }
 /*# sourceMappingURL=home.css.map */

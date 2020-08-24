@@ -1,5 +1,5 @@
 .film-block {
-  padding-top: 100px;
+  padding-top: spacing(10);
   position: relative;
 
   .nav-tabs {
@@ -103,8 +103,8 @@
         border-radius: 4px;
         padding: 2px;
         position: absolute;
-        top: 12px;
-        right: 25px;
+        top: 4%;
+        right: 10%;
         width: 54px;
         text-align: center;
         line-height: 1.1;
@@ -130,8 +130,8 @@
         border-radius: 4px;
         padding: 5px;
         position: absolute;
-        top: 265px;
-        right: 20px;
+        top: 66%;
+        right: 10%;
         width: 54px;
         text-align: center;
         line-height: 1.1;
@@ -166,6 +166,86 @@
         }
         .ticket-buy {
           display: block;
+        }
+      }
+    }
+  }
+
+  @include responsive-for("large") {
+    padding-top: spacing(5);
+
+    .film-container {
+      .film-item {
+        .film-rating {
+          right: 13%;
+        }
+        .film-date {
+          top: 58%;
+        }
+      }
+    }
+  }
+
+  @include responsive-for("medium") {
+    .film-container {
+      .film-item {
+        .trailer {
+          .overlay,
+          .trailer-play {
+            display: none;
+          }
+        }
+
+        .film-title,
+        .film-time {
+          display: none;
+        }
+
+        .film-rating {
+          top: 7%;
+          right: 16%;
+        }
+
+        .film-date {
+          top: 76%;
+          right: 14%;
+        }
+
+        .ticket-buy {
+          display: none;
+        }
+
+        &:hover {
+          .ticket-buy {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive-for("extra-small") {
+    .nav-tabs {
+      .nav-link {
+        @include text($h4 - 4px, $textBlack, $fwRegular);
+        font-size: $subtitle1;
+      }
+
+      .nav-link.active,
+      .nav-link:hover {
+        font-size: $h5;
+      }
+    }
+
+    .film-container {
+      .film-item {
+        // .film-rating {
+        //   right: 22%;
+        // }
+
+        .film-date {
+          top: 70%;
+          right: 20%;
         }
       }
     }

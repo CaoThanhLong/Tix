@@ -54,19 +54,14 @@
   //     }
   //   }
 
-  //   @include responsive-for("large") {
-  //     .owl-nav {
-  //       .owl-prev {
-  //         top: 17%;
-  //         left: -3.5%;
-  //       }
-
-  //       .owl-next {
-  //         top: 17%;
-  //         right: -3.5%;
-  //       }
-  //     }
-  //   }
+  @include responsive-for("large") {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        display: none;
+      }
+    }
+  }
 
   //   @include responsive-for("medium") {
   //     .owl-nav {
