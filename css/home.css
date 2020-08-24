@@ -491,8 +491,8 @@ body {
 
 .film-block .film-container .film-item .blockbluster {
   position: absolute;
-  top: -25px;
-  left: -7px;
+  top: -6%;
+  left: -3%;
   width: 60%;
   z-index: 3;
 }
