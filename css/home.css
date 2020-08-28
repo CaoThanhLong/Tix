@@ -569,13 +569,6 @@ body {
   }
 }
 
-.showing-film .grey-margin {
-  height: 100px;
-  background-image: url(../../../img/back-news.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .showing-film .showing-detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -932,6 +925,13 @@ body {
 .ticket-buy:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.grey-margin {
+  height: 100px;
+  background-image: url(../../../img/back-news.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .owl-carousel {
