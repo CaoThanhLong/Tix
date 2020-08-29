@@ -202,6 +202,12 @@
   @include responsive-for("medium") {
     .showing-detail {
       display: block;
+
+      .type-list,
+      .cinemas,
+      .films {
+        border: none;
+      }
     }
   }
 
