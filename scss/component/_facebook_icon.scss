@@ -1,0 +1,25 @@
+.facebook-icon {
+  .like,
+  .comment {
+    display: inline-table;
+    margin-right: 25px;
+    cursor: pointer;
+
+    img {
+      display: table-cell;
+      vertical-align: middle;
+      margin-right: 10px;
+      margin-top: 2px;
+      height: auto;
+      width: 18px;
+      transition: all 0.2s;
+    }
+
+    p {
+      @include text($body1, $textGrey, $fwRegular);
+      display: table-cell;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  }
+}

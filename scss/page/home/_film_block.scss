@@ -2,28 +2,6 @@
   padding-top: spacing(10);
   position: relative;
 
-  .nav-tabs {
-    border: none;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: spacing(4.5);
-
-    .nav-link {
-      border: none;
-      @include text($h4 - 4px, $textBlack, $fwRegular);
-      transition: all 0.2s;
-    }
-
-    .nav-link.active {
-      @include text($h4, $textSecondary, $fwRegular);
-    }
-
-    .nav-link:hover {
-      font-size: $h4;
-      cursor: pointer;
-    }
-  }
-
   .film-container {
     .film-item {
       position: relative;
@@ -225,18 +203,6 @@
   }
 
   @include responsive-for("extra-small") {
-    .nav-tabs {
-      .nav-link {
-        @include text($h4 - 4px, $textBlack, $fwRegular);
-        font-size: $subtitle1;
-      }
-
-      .nav-link.active,
-      .nav-link:hover {
-        font-size: $h5;
-      }
-    }
-
     .film-container {
       .film-item {
         // .film-rating {

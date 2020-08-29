@@ -50,8 +50,21 @@
     spacing(1) spacing(2.5)
   );
 
-  // position: absolute;
-  // bottom: 5%;
-  // left: 0;
   width: 100%;
+}
+
+.see-more {
+  @include button(
+    $subtitle1,
+    $fwMedium,
+    $textPrimary,
+    $primary,
+    $darkGrey,
+    $textWhite,
+    $secondary,
+    $secondary,
+    none,
+    spacing(3.5) auto spacing(0.2),
+    spacing(0.7) spacing(2.5)
+  );
 }
