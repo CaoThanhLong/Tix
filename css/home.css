@@ -909,6 +909,66 @@ body {
   }
 }
 
+.app {
+  background: url(../../../img/background-app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+
+.app .app-info {
+  padding: 100px 0;
+}
+
+.app .app-info h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.app .app-info h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.app .app-info p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.app .app-info p a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.app .app-display .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.app .app-display .mobile .mobile-border {
+  width: 200px;
+}
+
+.app .app-display .mobile .mobile-slide {
+  position: absolute;
+  top: 12px;
+  left: 126px;
+  width: 188px;
+  height: 403px;
+  border-radius: 19px;
+}
+
 .mycontainer {
   max-width: 940px;
   margin: 0 auto;
@@ -1049,6 +1109,27 @@ body {
 }
 
 .see-more:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.app-download {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px auto 0px;
+  padding: 7px 20px;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+}
+
+.app-download:hover {
+  color: #ffffff;
+  background-color: #fb4226;
+  border-color: #fb4226;
+}
+
+.app-download:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }

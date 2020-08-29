@@ -1,0 +1,49 @@
+.app {
+  background: url(../../../img/background-app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: spacing(12) 0;
+
+  .app-info {
+    padding: spacing(10) 0;
+    h3 {
+      @include text($h3, $textWhite, $fwMedium);
+      margin-bottom: spacing(2);
+    }
+
+    h6 {
+      @include text($h6, $textWhite, $fwMedium);
+      margin-bottom: spacing(2);
+    }
+
+    p {
+      @include text($subtitle1, $textWhite, $fwMedium);
+      margin: spacing(1) 0;
+
+      a {
+        text-decoration: underline;
+        color: $textWhite;
+      }
+    }
+  }
+  .app-display {
+    .mobile {
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      .mobile-border {
+        width: 200px;
+      }
+
+      .mobile-slide {
+        position: absolute;
+        top: 12px;
+        left: 126px;
+        width: 188px;
+        height: 403px;
+        border-radius: 19px;
+      }
+    }
+  }
+}

@@ -68,3 +68,19 @@
     spacing(0.7) spacing(2.5)
   );
 }
+
+.app-download {
+  @include button(
+    $h6,
+    $fwMedium,
+    $textWhite,
+    $secondary,
+    $secondary,
+    $textWhite,
+    $secondary,
+    $secondary,
+    none,
+    spacing(1) auto spacing(0),
+    spacing(0.7) spacing(2)
+  );
+}
