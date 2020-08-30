@@ -1238,7 +1238,7 @@ body {
 
 .myfooter {
   background: #222222;
-  padding: 20px 0;
+  padding: 20px 50px;
 }
 
 .myfooter .title {
@@ -1333,6 +1333,59 @@ body {
 .myfooter .img-right-footer img {
   width: 130px;
   float: right;
+}
+
+@media screen and (max-width: 992px) {
+  .myfooter .title {
+    display: none;
+  }
+  .myfooter .tix-footer-item:first-child {
+    display: none;
+  }
+  .myfooter .tix-footer-item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myfooter .tix-footer-item:last-child a {
+    margin-right: 10px;
+  }
+  .myfooter .partner-footer {
+    display: none;
+  }
+  .myfooter .app-social-footer .app-footer {
+    display: none;
+  }
+  .myfooter .contact-footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myfooter .img-left-footer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .myfooter .img-right-footer {
+    text-align: center;
+  }
+  .myfooter .img-right-footer img {
+    float: none;
+  }
 }
 
 .owl-carousel {

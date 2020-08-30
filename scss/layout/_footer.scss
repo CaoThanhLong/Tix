@@ -1,6 +1,6 @@
 .myfooter {
   background: $lightBlack;
-  padding: spacing(2) 0;
+  padding: spacing(2) spacing(5);
 
   .title {
     @include text($body1, $textWhite, $fwMedium);
@@ -96,6 +96,58 @@
     img {
       width: 130px;
       float: right;
+    }
+  }
+
+  @include responsive-for("large") {
+    .title {
+      display: none;
+    }
+
+    .tix-footer {
+      &-item:first-child {
+        display: none;
+      }
+
+      &-item:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        a {
+          margin-right: spacing(1);
+        }
+      }
+    }
+
+    .partner-footer {
+      display: none;
+    }
+
+    .app-social-footer {
+      .app-footer {
+        display: none;
+      }
+    }
+
+    .contact-footer {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  @include responsive-for("medium") {
+    .img-left-footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .img-right-footer {
+      text-align: center;
+      img {
+        float: none;
+      }
     }
   }
 }
