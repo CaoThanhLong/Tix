@@ -1,0 +1,101 @@
+.myfooter {
+  background: $lightBlack;
+  padding: spacing(2) 0;
+
+  .title {
+    @include text($body1, $textWhite, $fwMedium);
+    margin-bottom: spacing(1);
+  }
+
+  .tix-footer {
+    &-item {
+      a {
+        @include text($body1, $textGrey, $fwBold);
+        display: block;
+        transition: all 0.2s;
+        line-height: 2.3;
+        text-decoration: none;
+
+        &:hover {
+          color: $textWhite;
+        }
+      }
+    }
+  }
+
+  .partner-footer {
+    .partner-line {
+      margin-bottom: spacing(1.5);
+
+      a {
+        img {
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          margin-right: spacing(1.5);
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  .app-social-footer {
+    text-align: center;
+    a {
+      img {
+        height: 30px;
+        width: auto;
+        margin: spacing(0.5);
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid $darkGrey;
+    margin: spacing(2) spacing(-1.5);
+  }
+
+  .img-left-footer {
+    padding: 0;
+    img {
+      border-radius: 8px;
+      width: 80px;
+      height: auto;
+    }
+  }
+
+  .contact-footer {
+    p:nth-child(1) {
+      @include text($body1, $textWhite, $fwMedium);
+      line-height: 1.8;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #949494;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+
+    p {
+      a {
+        text-decoration: none;
+        color: $textSecondary;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  .img-right-footer {
+    padding: 0;
+    img {
+      width: 130px;
+      float: right;
+    }
+  }
+}
