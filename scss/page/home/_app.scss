@@ -1,11 +1,14 @@
 .app {
   background: url(../../../img/background-app.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: spacing(12) 0;
+  background-repeat: repeat-y;
+  padding: spacing(12) spacing(7);
 
   .app-info {
-    padding: spacing(10) 0;
+    padding: spacing(5) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h3 {
       @include text($h3, $textWhite, $fwMedium);
       margin-bottom: spacing(2);
@@ -27,23 +30,71 @@
     }
   }
   .app-display {
+    padding: spacing(5) 14%;
     .mobile {
       display: flex;
       justify-content: center;
       position: relative;
+      // height: 100%;
 
       .mobile-border {
-        width: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
       }
 
       .mobile-slide {
         position: absolute;
-        top: 12px;
-        left: 126px;
-        width: 188px;
-        height: 403px;
+        top: 9px;
+        left: 6px;
+        width: 94.5%;
         border-radius: 19px;
       }
     }
+  }
+
+  @include responsive-for("medium") {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .app-info {
+      padding: spacing(7) 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: $h4;
+      }
+
+      h6 {
+        font-size: $subtitle1;
+      }
+
+      p {
+        font-size: $subtitle1;
+      }
+
+      .app-download {
+        margin: spacing(1) auto spacing(0);
+      }
+    }
+
+    .app-display {
+      padding-top: 6%;
+      padding-bottom: 10%;
+    }
+  }
+
+  @include responsive-for("small") {
+    .app-download {
+      min-width: 10px;
+    }
+  }
+
+  @include responsive-for("extra-small") {
+    padding: spacing(12) spacing(5);
   }
 }

@@ -912,12 +912,22 @@ body {
 .app {
   background: url(../../../img/background-app.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: 120px 0;
+  background-repeat: repeat-y;
+  padding: 120px 70px;
 }
 
 .app .app-info {
-  padding: 100px 0;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .app .app-info h3 {
@@ -946,6 +956,10 @@ body {
   color: #ffffff;
 }
 
+.app .app-display {
+  padding: 50px 14%;
+}
+
 .app .app-display .mobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -957,16 +971,67 @@ body {
 }
 
 .app .app-display .mobile .mobile-border {
-  width: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .app .app-display .mobile .mobile-slide {
   position: absolute;
-  top: 12px;
-  left: 126px;
-  width: 188px;
-  height: 403px;
+  top: 9px;
+  left: 6px;
+  width: 94.5%;
   border-radius: 19px;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .app .app-info {
+    padding: 70px 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .app .app-info h3 {
+    font-size: 24px;
+  }
+  .app .app-info h6 {
+    font-size: 14px;
+  }
+  .app .app-info p {
+    font-size: 14px;
+  }
+  .app .app-info .app-download {
+    margin: 10px auto 0px;
+  }
+  .app .app-display {
+    padding-top: 6%;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .app .app-download {
+    min-width: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .app {
+    padding: 120px 50px;
+  }
 }
 
 .mycontainer {
@@ -1117,10 +1182,11 @@ body {
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  margin: 10px auto 0px;
+  margin: 10px 180px 10px 0px;
   padding: 7px 20px;
   background-color: #fb4226;
   border: 1px solid #fb4226;
+  min-width: 255px;
 }
 
 .app-download:hover {
