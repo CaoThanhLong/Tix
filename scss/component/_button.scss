@@ -90,12 +90,12 @@
   @include button(
     $subtitle2,
     $fwRegular,
-    $textWhite,
-    $secondary,
-    $secondary,
-    $textWhite,
-    $secondary,
-    $secondary,
+    $textPrimary,
+    $purple,
+    $purple,
+    $textPrimary,
+    $purple,
+    $purple,
     none,
     spacing(1) spacing(1),
     spacing(0.5) spacing(0.5)
@@ -104,5 +104,7 @@
   width: 35px;
   height: 35px;
   line-height: 25px;
+  font-weight: $fwBold;
   border-radius: 50%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
