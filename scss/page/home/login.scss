@@ -1,0 +1,13 @@
+@import "../../theme/theme";
+@import "../../base/reset";
+@import "../../helper/function";
+@import "../../helper/mixin";
+
+@import "../../component/button";
+
+.background {
+  height: 1000px;
+  background: url(../../../img/background-login.jpg);
+  background-size: contain;
+  background-position: center;
+}

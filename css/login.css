@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4a4a4a;
+  background-color: #ffffff;
+  font-weight: 400;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.close-collapse {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 10px;
+  padding: 5px 5px;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+  width: 35px;
+  height: 35px;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+.close-collapse:hover {
+  color: #ffffff;
+  background-color: #fb4226;
+  border-color: #fb4226;
+}
+
+.close-collapse:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ticket-buy-now {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 10px;
+  padding: 10px 25px;
+  background-color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+}
+
+.ticket-buy-now:hover {
+  color: #ffffff;
+  background-color: #4a4a4a;
+  border-color: #4a4a4a;
+}
+
+.ticket-buy-now:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ticket-buy {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0px;
+  padding: 10px 25px;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+  width: 100%;
+}
+
+.ticket-buy:hover {
+  color: #ffffff;
+  background-color: #fb4226;
+  border-color: #fb4226;
+}
+
+.ticket-buy:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.see-more {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 35px auto 2px;
+  padding: 7px 25px;
+  background-color: #ffffff;
+  border: 1px solid #4a4a4a;
+}
+
+.see-more:hover {
+  color: #ffffff;
+  background-color: #fb4226;
+  border-color: #fb4226;
+}
+
+.see-more:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.app-download {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 180px 10px 0px;
+  padding: 7px 20px;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+  min-width: 255px;
+}
+
+.app-download:hover {
+  color: #ffffff;
+  background-color: #fb4226;
+  border-color: #fb4226;
+}
+
+.app-download:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.close-login {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 10px;
+  padding: 5px 5px;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+  width: 35px;
+  height: 35px;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+.close-login:hover {
+  color: #ffffff;
+  background-color: #fb4226;
+  border-color: #fb4226;
+}
+
+.close-login:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background {
+  height: 1000px;
+  background: url(../../../img/background-login.jpg);
+  background-size: contain;
+  background-position: center;
+}
+/*# sourceMappingURL=login.css.map */
